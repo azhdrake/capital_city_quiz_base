@@ -13,7 +13,7 @@ randomCountryElement.innerHTML = countryName
 submitButton.addEventListener("click", async function(){ //fetches the correct answer and checks if it matches user answer.
 	userAnswer = userAnswerElement.value
 	
-	let countriesAndCapitalsURL = "http://api.worldbank.org/v2/country/"+countryCode+"?format=json"
+	let countriesAndCapitalsURL = "https://api.worldbank.org/v2/country/"+countryCode+"?format=json"
 	let randomCapital = "not working"
 	
 	await fetch(countriesAndCapitalsURL) // await to ensure that fetch is finished and the randomCapital var is populated before we move on.
